@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.min.css">
+
+</head>
+<body>
+    <div class="calculator">
+        <div class="container">
+            <form class="calculator-grid-box" name= "calc">
+                <div class="calculator-grid-item">
+                    <div class="output">
+                        <div class="solar-box">
+                            <span ></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="output-box">
+                            <input type="text" class="value" name="txt" readonly="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="calculator-grid-item">
+                    <div class="input">
+                        <span class="num pure-num" onclick="document.calc.txt.value +='7'">&#x37;</span>
+                        <span class="num pure-num" onclick="document.calc.txt.value +='8'">&#x38;</span>
+                        <span class="num pure-num" onclick="document.calc.txt.value +='9'">&#x39;</span>
+                        <span   onclick="document.calc.txt.value = null"><i class="fas fa-power-off"></i></span>
+                        <span class="num pure-num" onclick="document.calc.txt.value +='4'">&#x34;</span>
+                        <span class="num pure-num" onclick="document.calc.txt.value +='5'">&#x35;</span>
+                        <span class="num pure-num" onclick="document.calc.txt.value +='6'">&#x36;</span>
+                        <span class="num" onclick="document.calc.txt.value +='/'">&#247;</span>
+                        <span class="num pure-num" onclick="document.calc.txt.value +='1'">&#x31;</span>
+                        <span class="num pure-num" onclick="document.calc.txt.value +='2'">&#x32;</span>
+                        <span class="num pure-num" onclick="document.calc.txt.value +='3'">&#x33;</span>
+                        <span class="num" onclick="document.calc.txt.value +='*'">&#215;</span>
+                        <span class="num pure-num" onclick="document.calc.txt.value +='0'">&#x30;</span>
+                        <span class="num pure-num" onclick="document.calc.txt.value +='.'">&#x2027;</span>
+                        <span class="num" onclick="document.calc.txt.value +='+'">&plus;</span>
+                        <span class="num" onclick="document.calc.txt.value +='-'">&minus;</span>
+                        <span class="num equalto" onclick="document.calc.txt.value = eval(calc.txt.value)">&equals;</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
